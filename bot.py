@@ -172,7 +172,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         return
 
     if flooding_command is None:
-        await update.message.reply_text('⚠️ Bạn chưa thiết lập tham số! Hãy dùng lệnh `/bgmi`.')
+        await update.message.reply_text('⚠️ Bạn chưa thiết lập tham số! Hãy dùng lệnh `/set`.')
         return
 
     flooding_process = subprocess.Popen(flooding_command)
